@@ -1,0 +1,328 @@
+/*=============================================
+=                  General                    =
+=============================================*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+width:8px;
+height:8px;
+}
+
+::-webkit-scrollbar-thumb{
+border-radius:100px;
+background:rgb(165, 165, 165);
+}
+
+::-webkit-scrollbar-track {
+border-radius:0;
+background:rgba(0,0,0,0.1);
+}
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+
+.navbar {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .11);
+    max-width: 100%;
+    max-height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    z-index: 1003;
+}
+
+
+.nav-item{
+    color: #000;
+    list-style-type: none; 
+}
+
+.nav-link{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+padding-left: 20px;
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+
+/*=============================================
+=                  Intro                      =
+=============================================*/
+
+
+.aboutme{
+    margin: 0 auto;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.product{
+    margin: 8% auto;
+    display: flex;
+    justify-content: center;
+}
+
+.introduction{
+    position: relative;
+    height: 100%;
+}
+
+.photo{
+    width: 600px;
+    height: 450px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.photo img{
+    max-width: 95%;
+    max-height: 95%;
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+
+
+
+.intext{
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+.intext h1{
+ padding-bottom: 20px;
+}
+
+.intext p{
+    line-height: 30px;
+    letter-spacing: 0.3px;
+}
+
+h6{
+    line-height: 25px;
+}
+
+.Ability{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+.IMGPD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+.IMGPD img{
+padding:2%;
+max-width: 90%;
+max-height: 90%;
+}
+
+.bottom{
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    background: #222E42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bottom:hover{
+    background-color: #FF9D00;
+}
+
+.bottom a{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none;
+    color: white;
+}
+
+.bottom a:hover{
+    text-decoration:none;
+    color: #222E42;
+}
+
+.PD{
+    margin: 0 ,auto;
+    width:100%;
+    height: 550px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+}
+
+.item{
+    width: 300px;
+    height: 300px;
+    padding: 0px 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.picture{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.picture img{
+    width: 100%;
+    height: 100%;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    opacity: 0.5;
+}
+
+.picture img:hover{
+    transform: scale(1.03,1.03);
+    transition: all .3s ease-out;
+    opacity: 1;
+}
+
+.PPP{
+    height: 80px;
+    padding-top: 10px;
+}
+
+.PPP p{
+margin: 0px;
+text-align:center;
+}
+
+
+/*=============================================
+=                  Features                   =
+=============================================*/
+
+
+#light01,#light02,#light03,#light04,#light05,#light06{
+  display:none;
+  position:absolute;
+  width: 600px;
+  height: 600px;
+  z-index:1001;
+  overflow:auto;
+  top:55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.MP img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.MP p{
+  position:absolute;
+  top: 0;
+  z-index:1002;
+}
+
+#fade01,#fade02,#fade03,#fade04,#fade05,#fade06 {
+  display:none;
+  position:fixed;
+  top:0%;
+  left:0%;
+  width:100%;
+  height:100%;
+  background-color:black;
+  z-index:1000;
+  -moz-opacity:0.8;
+  opacity:.80;
+  filter:alpha(opacity=80);
+}
+
+/*=============================================
+=                  Reviews                    =
+=============================================*/
+
+/*=============================================
+=                  Gallery                    =
+=============================================*/
+
+/* TODO: 設定Hover特效 */
+
+
+/* 放入背景圖片 */
+
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+
+footer{
+    text-align:center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 36, 36);
+    height: 40px;
+    width: 100%;
+    display: flex;
+        justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+
+
+footer p{
+    margin-bottom: 0px;
+}
+
+
+/*=============================================
+=                  Button                    =
+=============================================*/
