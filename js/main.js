@@ -123,3 +123,13 @@ window.onload=function(){
    }
 }
 
+
+const menuButton = document.getElementById("menu-button");
+
+menuButton.addEventListener("click", function(event) {
+ if (this.classList.contains("open")) {
+  this.classList.remove("open");
+ } else {
+  this.classList.add("open");
+ }
+});
